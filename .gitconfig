@@ -1,0 +1,11 @@
+[user]
+	name = ksugawara61
+	email = katsuo.com61@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+[alias]
+	st = status
+	ci = commit
+        bt = branch
