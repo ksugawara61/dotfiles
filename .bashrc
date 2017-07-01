@@ -11,6 +11,7 @@ fi
 # User specific aliases and functions
 alias be="bundle exec"
 alias ru="bundle exec rackup"
+alias ll="ls -al"
 
 # display git branch
 function parse_git_branch {
