@@ -1,7 +1,7 @@
 #!/bin/sh
 # rbenv インストール用スクリプト
 
-# インストールに必要なミドルウェアをインストール
+# 依存パッケージをインストール
 sudo yum install -y git gcc gcc-c++ openssl-devel readline-devel
 
 # rbenvのインストール
