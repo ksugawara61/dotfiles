@@ -1,12 +1,16 @@
-[user]
-	name = ksugawara61
-	email = katsuya@kokohadoko.net
+[include]
+    path = ~/.gitconfig.local
 [color]
-	ui = auto
+    ui = auto
 [core]
-	editor = vim
+    editor = vim
 [alias]
-	st = status
-	ci = commit
-        bt = branch
-        co = checkout
+    st = status
+    ci = commit
+    bt = branch
+    co = checkout
+    la = !git checkout main && git prune && git fetch && git pull origin main
+    wb = "!f() { WORKTREE_PATH=../$(basename $(pwd))-${1}; git worktree add $WORKTREE_PATH $2; }; f"
+    wd = worktree remove .
+[ghq]
+    root = ~/Documents/ghq
