@@ -19,9 +19,9 @@ link() {
   echo "link: $dest -> $src"
 }
 
-mkdir -p "$DEST/agents" "$DEST/rules" "$DEST/skills"
+mkdir -p "$DEST/agents" "$DEST/rules"
 link "$SRC/settings.json" "$DEST/settings.json"
-for dir in agents rules skills; do
+for dir in agents rules; do
   for item in "$SRC/$dir"/*; do
     link "$item" "$DEST/$dir/$(basename "$item")"
   done
